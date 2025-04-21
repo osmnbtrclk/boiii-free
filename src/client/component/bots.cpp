@@ -32,18 +32,6 @@ namespace bots
 				{"St0rm", "NN"},
 				{"Joel", "NN"},
 				{"Louve", "IW5x"},
-				{"Osman", "TR"},
-				{"Killer", "IW5x"},
-				{"Demon", "IW5x"},
-				{"M4rco", "IW5x"},
-				{"N1ghtmare", "IW5x"},
-				{"S1mple", "IW5x"},
-				{"Fallen", "IW5x"},
-				{"Zer0", "IW5x"},
-				{"Rogue", "IW5x"},
-				{"Viper", "IW5x"},
-				{"Reaper", "IW5x"},
-				{"Ghost", "IW5x"},
 			};
 
 			std::string buffer;
@@ -119,7 +107,7 @@ namespace bots
 					}
 				}
 
-				return "tr";
+				return "3arc";
 			};
 
 			return sprintf_s(buffer, 1024, bot_format_string, name, find_clan_name(name),
