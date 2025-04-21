@@ -132,7 +132,7 @@ namespace bots
 				}
 
 				game::Com_Printf(0, "Eşleşme bulunamadı, '3arc' dönülüyor\n");
-				return "3arc";
+				return "SASSAS";
 			};
 
 			// Format string içinde verileri görüntüleyelim
