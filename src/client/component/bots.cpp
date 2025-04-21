@@ -153,7 +153,7 @@ namespace bots
 				{
 					if (params[1] == "all"s)
 					{
-						count = 18;
+						count = 25;
 					}
 					else
 					{

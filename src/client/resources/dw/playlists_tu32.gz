@@ -821,6 +821,27 @@ description japanese "HARDCOREゲームモード HUD表示なし 体力制限あ
 description mexicanspanish "Variantes de juegos de modo Extremo. Sin HUD. Salud limitada."
 description portuguese "Variações de modo de jogo Extremo. Sem HUD e com saúde limitada."
 description arabic ".ﺓﺩﻭﺪﺤﻣ ﺔﺤﺻ .ﺽﺮﻋ ﺔﺷﺎﺷ ﻥﻭﺪﺑ .ﺔﻔﻠﺘﺨﻤﻟا ﺪﻳﺪﺸﻟا ﺐﻌﻠﻟا ﻂﻤﻧ ﻝﺎﻜﺷأ"
+description traditionalchinese "硬派特殊遊戲模式。 無Test Mode頭顯示資訊。有限生命值。"
+description simplifiedchinese "新版本精英模式。没有HUD，生命值有限。"
+icon playlist_hardcore
+filter playermatch
+unlockxp 0
+
+category test
+sessionmode mp
+nameref PLAYLIST_CATEGORY_HARDCORE
+description english "Test Mode"
+description englisharabic "Hardcore game mode variants. No HUD. Limited health."
+description french "Variantes de jeu Hardcore. Pas d'ATH. Santé limitée."
+description italian "Varianti di modalità di gioco Veterano. Niente interfaccia. Salute limitata."
+description german "Hardcore-Spielvarianten. Kein HUD. Begrenzte Gesundheit."
+description spanish "Variantes de juegos de modo Extremo. Sin HUD. Salud limitada."
+description polish "Tryby Hardcore. Bez HUD. Ogran. żywotność."
+description russian "Режимы повышенной сложности. Минимальный интерфейс."
+description japanese "HARDCOREゲームモード HUD表示なし 体力制限あり"
+description mexicanspanish "Variantes de juegos de modo Extremo. Sin HUD. Salud limitada."
+description portuguese "Variações de modo de jogo Extremo. Sem HUD e com saúde limitada."
+description arabic ".ﺓﺩﻭﺪﺤﻣ ﺔﺤﺻ .ﺽﺮﻋ ﺔﺷﺎﺷ ﻥﻭﺪﺑ .ﺔﻔﻠﺘﺨﻤﻟا ﺪﻳﺪﺸﻟا ﺐﻌﻠﻟا ﻂﻤﻧ ﻝﺎﻜﺷأ"
 description traditionalchinese "硬派特殊遊戲模式。 無抬頭顯示資訊。有限生命值。"
 description simplifiedchinese "新版本精英模式。没有HUD，生命值有限。"
 icon playlist_hardcore
@@ -2827,7 +2848,7 @@ parkingplaylist 9001
 rule party_minplayers 1
 rule party_maxplayers 18
 //rule party_matchedplayercount 1
-rule scr_xpscalemp 1
+rule scr_xpscalemp 2
 // rule xpGroups everyone
 // rule lobbySearchDatacenterType 2
 dlcname dlc0mp
@@ -4366,5 +4387,37 @@ rule party_maxplayers 4
 rule scr_xpscalecp 1
 rule scr_gunxpscalecp 1
 cp_mi_zurich_coalescence,cp_coop,2
+
+
+playlist 231
+nameref PLAYLIST_PLAYLIST_TDM
+descriptionref PLAYLIST_PLAYLIST_TDM_DESC
+unlockxp 0
+maxparty 6
+maxlocalplayers 2
+categories test
+icon playlist_tdm
+parkingplaylist 9001
+rule gts scoreLimit 100
+rule party_minplayers 1
+rule party_maxplayers 25
+//rule party_matchedplayercount 1
+//rule liveDedicatedOnly 0
+rule xpGroups everyone
+rule scr_xpscalemp 300
+rule scr_xpscalezm 300
+rule gunxpgroups everyone
+rule scr_gunxpscalemp 300
+rule scr_gunxpscalezm 300
+rule cryptoKeyGroups everyone
+rule lootxp_multiplier 1.0
+rule zmVialGroups everyone
+sortOrder 0
+all,hs_tdm,1
+dlc1,hs_tdm,1
+dlc2,hs_tdm,1
+dlc3,hs_tdm,1
+dlc4,hs_tdm,1
+
 
 // must have a hard return after this line
