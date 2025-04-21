@@ -113,16 +113,13 @@ namespace bots
 			{
 				for (const auto& entry : get_bot_names())
 				{
-					// Case-insensitive comparison
-					if (needle.size() == entry.first.size() &&
-						std::equal(needle.begin(), needle.end(), entry.first.begin(),
-							[](char a, char b) { return std::tolower(a) == std::tolower(b); }))
+					if (entry.first == needle)
 					{
 						return entry.second.data();
 					}
 				}
 
-				return "3arc";
+				return "tr";
 			};
 
 			return sprintf_s(buffer, 1024, bot_format_string, name, find_clan_name(name),
