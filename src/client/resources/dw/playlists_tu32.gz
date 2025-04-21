@@ -69,7 +69,7 @@ setdvar tu4_burnDuplicates 1
 setdvar loot_mpItemVersions "1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18"    //Enables black market items for DEV
 //setdvar loot_salePercentOff .5    //Makes loot 50% off (UI Only - need FFOTD and Backend Update to actually get 50% off)
 //setdvar lootxp_multiplier 2.0    //Doubles Cryptokey earn rate - delete for playlists going LIVE, unless needed (requires backend update as well)
-//setdvar scr_vialsAwardedScale 2.0    //Double Liquid Divinium Earn Rate - delete for playlits giong LIVE, unless needed (requires backend update and FFOTD if before TU9)
+setdvar scr_vialsAwardedScale 2.0    //Double Liquid Divinium Earn Rate - delete for playlits giong LIVE, unless needed (requires backend update and FFOTD if before TU9)
 setdvar tu4_enableCodPoints 1
 setdvar loot_mpItemCurrentDropStringRef MENU_MONTHS_JUN    //NEED TO UPDATE WITH EACH LOOT TU - sets a banner on the latest loot (as determined loot_mpItemVersions); banner's month is determined by this DVAR
 setdvar loot_bundle_final_count 10    //Fixes post-event supply drops remaining number
@@ -78,7 +78,7 @@ setdvar loot_trifecta_breadcrumb_index 2    //Increment this to allow for Breadr
 setdvar black_market_gun_game 0
 setdvar rotatingPlaylistStartTime 1526058000
 
-setdvar rare_bundle_10for5_cpCost 500    //Price for 10for5
+setdvar rare_bundle_10for5_cpCost 0    //Price for 10for5
 setdvar rare__bundle_10for5_dwid 51    //DW ID for 10for5
 
 //These dvars will prevent noDupes and 100 Bundles from disappearing after the event ends. per V. Sharma
@@ -138,10 +138,10 @@ setdvar enable_season_pass_incentive 1
 //Contracts    // Turns on UI for Contracts
 setdvar show_contracts_button 1    // Turns on Contract Button
 setdvar enable_weapon_contract 1    // Enable weapon contract
-setdvar weapon_contract_target_value 75    // Setting to 5 for QA, but will turn to 75 for when we ship
+setdvar weapon_contract_target_value 5    // Setting to 5 for QA, but will turn to 75 for when we ship
 setdvar contracts_enabled_mp 1
 setdvar contracts_start_time 1460998800
-setdvar daily_contract_cryptokey_reward_count 10    // Defines number of Cryptokeys to reward, default value for this dvar is 10
+setdvar daily_contract_cryptokey_reward_count 100    // Defines number of Cryptokeys to reward, default value for this dvar is 10
 
 //GobbleGum Features
 setdvar scr_firstGumFree 1    // Enables promotion where First GobbleGum in each round is Free
@@ -222,11 +222,11 @@ setdvar live_useRegulation 1
 
 event default
 rule xpGroups everyone
-rule scr_xpscalemp 1
-rule scr_xpscalezm 1
+rule scr_xpscalemp 50
+rule scr_xpscalezm 50
 rule gunxpgroups everyone
-rule scr_gunxpscalemp 1
-rule scr_gunxpscalezm 1
+rule scr_gunxpscalemp 50
+rule scr_gunxpscalezm 50
 rule cryptoKeyGroups everyone
 rule lootxp_multiplier 1.0
 rule zmVialGroups everyone
@@ -500,7 +500,7 @@ rule gts inactivityKick 60
 gametype hs_tdm
 nameref PLAYLIST_GAMETYPE_HS_TDM
 script tdm
-rule gts scorelimit 75
+rule gts scorelimit 100
 
 gametype hs_ball
 nameref PLAYLIST_GAMETYPE_HS_BALL
@@ -788,7 +788,7 @@ unlockxp 0
 category core
 sessionmode mp
 nameref PLAYLIST_CATEGORY_CORE
-description english "Base game modes and maps."
+description english "Base game modes and maps. TEST"
 description englisharabic "Base game modes and maps."
 description french "Modes de jeu et cartes de base."
 description italian "Modalità di gioco e mappe di base."
@@ -1507,9 +1507,9 @@ maxlocalplayers 2
 categories core
 icon playlist_tdm
 parkingplaylist 9001
-rule gts scoreLimit 75
+rule gts scoreLimit 100
 rule party_minplayers 1
-rule party_maxplayers 18
+rule party_maxplayers 25
 //rule party_matchedplayercount 1
 //rule liveDedicatedOnly 0
 sortOrder 0
