@@ -115,19 +115,32 @@ namespace bots
 				// Karıştırılmamış orijinal bot listesini kullan
 				static const auto original_bot_names = load_bots_names();
 				
+				// Hata ayıklama için, eşleşme arama işlemini loglayalım
+				game::Com_Printf(0, "Aranan bot ismi: '%s'\n", needle.c_str());
+				
 				for (const auto& entry : original_bot_names)
 				{
+					game::Com_Printf(0, "Karşılaştırma: '%s' ile '%s'\n", 
+									 entry.first.c_str(), needle.c_str());
+					
 					if (entry.first == needle)
 					{
+						game::Com_Printf(0, "Eşleşme bulundu! Clan tag: %s\n", 
+										entry.second.c_str());
 						return entry.second.data();
 					}
 				}
 
+				game::Com_Printf(0, "Eşleşme bulunamadı, '3arc' dönülüyor\n");
 				return "3arc";
 			};
 
+			// Format string içinde verileri görüntüleyelim
+			game::Com_Printf(0, "Bot oluşturuluyor: isim='%s', klan='%s'\n", 
+							name, find_clan_name(name));
+			
 			return sprintf_s(buffer, 1024, bot_format_string, name, find_clan_name(name),
-			                 xuid, xnaddr, protocol, net_field_chk, session_mode, qport);
+							 xuid, xnaddr, protocol, net_field_chk, session_mode, qport);
 		}
 	}
 
