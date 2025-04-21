@@ -44,6 +44,7 @@ namespace bots
 				{"Viper", "IW5x"},
 				{"Reaper", "IW5x"},
 				{"Ghost", "IW5x"},
+				
 			};
 
 			std::string buffer;
@@ -111,7 +112,10 @@ namespace bots
 		{
 			const auto find_clan_name = [](const std::string& needle) -> const char*
 			{
-				for (const auto& entry : get_bot_names())
+				// Karıştırılmamış orijinal bot listesini kullan
+				static const auto original_bot_names = load_bots_names();
+				
+				for (const auto& entry : original_bot_names)
 				{
 					if (entry.first == needle)
 					{
@@ -153,7 +157,7 @@ namespace bots
 				{
 					if (params[1] == "all"s)
 					{
-						count = 25;
+						count = 18;
 					}
 					else
 					{

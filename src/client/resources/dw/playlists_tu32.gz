@@ -222,11 +222,11 @@ setdvar live_useRegulation 1
 
 event default
 rule xpGroups everyone
-rule scr_xpscalemp 30
-rule scr_xpscalezm 30
+rule scr_xpscalemp 3
+rule scr_xpscalezm 3
 rule gunxpgroups everyone
-rule scr_gunxpscalemp 30
-rule scr_gunxpscalezm 30
+rule scr_gunxpscalemp 3
+rule scr_gunxpscalezm 3
 rule cryptoKeyGroups everyone
 rule lootxp_multiplier 1.0
 rule zmVialGroups everyone
@@ -4404,11 +4404,11 @@ rule party_maxplayers 25
 //rule party_matchedplayercount 1
 //rule liveDedicatedOnly 0
 rule xpGroups everyone
-rule scr_xpscalemp 300
-rule scr_xpscalezm 300
+rule scr_xpscalemp 3
+rule scr_xpscalezm 3
 rule gunxpgroups everyone
-rule scr_gunxpscalemp 300
-rule scr_gunxpscalezm 300
+rule scr_gunxpscalemp 3
+rule scr_gunxpscalezm 3
 rule cryptoKeyGroups everyone
 rule lootxp_multiplier 1.0
 rule zmVialGroups everyone
