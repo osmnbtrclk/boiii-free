@@ -63,23 +63,23 @@ jobs:
             data/*
 
 
-  create_release:
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.event_name == 'workflow_dispatch'
-    steps:
-      - name: Download boiii.exe
-        uses: actions/download-artifact@v4
-        with:
-          name: Release Binary
-          path: artifacts
+  # create_release:
+  #   needs: build
+  #   runs-on: ubuntu-latest
+  #   if: github.event_name == 'workflow_dispatch'
+  #   steps:
+  #     - name: Download boiii.exe
+  #       uses: actions/download-artifact@v4
+  #       with:
+  #         name: Release Binary
+  #         path: artifacts
 
-      - name: Create a Release
-        uses: marvinpinto/action-automatic-releases@latest
-        with:
-          repo_token: ${{ secrets.TOKEN }}
-          automatic_release_tag: v1.0.${{ github.run_number }}
-          title: Release v1.0.${{ github.run_number }}
-          prerelease: false
-          files: |
-            artifacts/boiii.exe
+  #     - name: Create a Release
+  #       uses: marvinpinto/action-automatic-releases@latest
+  #       with:
+  #         repo_token: ${{ secrets.TOKEN }}
+  #         automatic_release_tag: v1.0.${{ github.run_number }}
+  #         title: Release v1.0.${{ github.run_number }}
+  #         prerelease: false
+  #         files: |
+  #           artifacts/boiii.exe
