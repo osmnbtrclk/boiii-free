@@ -98,24 +98,24 @@ namespace bots
 
 		int format_bot_string(char* buffer, [[maybe_unused]] const char* format, const char* name, const char* xuid,
 			const char* xnaddr, int protocol, int net_field_chk, const char* session_mode, int qport)
-			{
+		{
 			const auto find_clan_name = [](const std::string& needle) -> const char*
 			{
 				for (const auto& entry : get_bot_names())
 				{
-				// Büyük/küçük harfe duyarsız karşılaştırma yap
-				if (needle.length() == entry.first.length() &&
-					std::equal(needle.begin(), needle.end(), entry.first.begin(),
-							   [](char a, char b) { return std::tolower(a) == std::tolower(b); }))
-				{
-					return entry.second.data();
-				}
+					// Büyük/küçük harfe duyarsız karşılaştırma yap
+					if (needle.length() == entry.first.length() &&
+						std::equal(needle.begin(), needle.end(), entry.first.begin(),
+								   [](char a, char b) { return std::tolower(a) == std::tolower(b); }))
+					{
+						return entry.second.data();
+					}
 				}
 				return "3arc"; // Bulunamazsa varsayılan klan etiketi
 			};
 			return sprintf_s(buffer, 1024, bot_format_string, name, find_clan_name(name),
 					xuid, xnaddr, protocol, net_field_chk, session_mode, qport);
-			}
+		}
 
 	struct component final : generic_component
 	{
