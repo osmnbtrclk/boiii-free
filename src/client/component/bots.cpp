@@ -32,6 +32,8 @@ namespace bots
 				{"St0rm", "NN"},
 				{"Joel", "NN"},
 				{"Louve", "IW5x"},
+				{"Osman", "TR"},
+
 			};
 
 			std::string buffer;
@@ -97,17 +99,17 @@ namespace bots
 		int format_bot_string(char* buffer, [[maybe_unused]] const char* format, const char* name, const char* xuid,
 		                      const char* xnaddr, int protocol, int net_field_chk, const char* session_mode, int qport)
 		{
-			const auto find_clan_name = [](const std::string& needle) -> const char*
-			{
+			utils::string::trim(needle); // Trim whitespace
 				for (const auto& entry : get_bot_names())
 				{
-					if (entry.first == needle)
+					if (utils::string::iequals(entry.first, needle)) // Case-insensitive comparison
 					{
 						return entry.second.data();
 					}
 				}
 
-				return "3arc";
+				return "3arc"; // Default clan tag if not found
+			
 			};
 
 			return sprintf_s(buffer, 1024, bot_format_string, name, find_clan_name(name),
@@ -141,7 +143,7 @@ namespace bots
 				{
 					if (params[1] == "all"s)
 					{
-						count = 18;
+						count = 25;
 					}
 					else
 					{
