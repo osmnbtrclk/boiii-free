@@ -33,7 +33,17 @@ namespace bots
 				{"Joel", "NN"},
 				{"Louve", "IW5x"},
 				{"Osman", "TR"},
-
+				{"Killer", "IW5x"},
+				{"Demon", "IW5x"},
+				{"M4rco", "IW5x"},
+				{"N1ghtmare", "IW5x"},
+				{"S1mple", "IW5x"},
+				{"Fallen", "IW5x"},
+				{"Zer0", "IW5x"},
+				{"Rogue", "IW5x"},
+				{"Viper", "IW5x"},
+				{"Reaper", "IW5x"},
+				{"Ghost", "IW5x"},
 			};
 
 			std::string buffer;
@@ -97,25 +107,28 @@ namespace bots
 		}
 
 		int format_bot_string(char* buffer, [[maybe_unused]] const char* format, const char* name, const char* xuid,
-			const char* xnaddr, int protocol, int net_field_chk, const char* session_mode, int qport)
+		                      const char* xnaddr, int protocol, int net_field_chk, const char* session_mode, int qport)
 		{
 			const auto find_clan_name = [](const std::string& needle) -> const char*
 			{
 				for (const auto& entry : get_bot_names())
 				{
-					// Büyük/küçük harfe duyarsız karşılaştırma yap
-					if (needle.length() == entry.first.length() &&
+					// Case-insensitive comparison
+					if (needle.size() == entry.first.size() &&
 						std::equal(needle.begin(), needle.end(), entry.first.begin(),
-								   [](char a, char b) { return std::tolower(a) == std::tolower(b); }))
+							[](char a, char b) { return std::tolower(a) == std::tolower(b); }))
 					{
 						return entry.second.data();
 					}
 				}
-				return "3arc"; // Bulunamazsa varsayılan klan etiketi
+
+				return "3arc";
 			};
+
 			return sprintf_s(buffer, 1024, bot_format_string, name, find_clan_name(name),
-					xuid, xnaddr, protocol, net_field_chk, session_mode, qport);
+			                 xuid, xnaddr, protocol, net_field_chk, session_mode, qport);
 		}
+	}
 
 	struct component final : generic_component
 	{
@@ -143,7 +156,7 @@ namespace bots
 				{
 					if (params[1] == "all"s)
 					{
-						count = 25;
+						count = 18;
 					}
 					else
 					{
