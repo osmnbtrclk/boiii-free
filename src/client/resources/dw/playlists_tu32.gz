@@ -1507,9 +1507,9 @@ maxlocalplayers 2
 categories core
 icon playlist_tdm
 parkingplaylist 9001
-rule gts scoreLimit 100
+rule gts scoreLimit 75
 rule party_minplayers 1
-rule party_maxplayers 25
+rule party_maxplayers 18
 //rule party_matchedplayercount 1
 //rule liveDedicatedOnly 0
 sortOrder 0
@@ -3737,8 +3737,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_eth_prologue,cp_coop,2
 
 playlist 201
@@ -3767,8 +3767,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_zurich_newworld,cp_coop,2
 
 playlist 202
@@ -3798,8 +3798,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_sing_blackstation,cp_coop,2
 
 playlist 203
@@ -3826,8 +3826,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_sing_biodomes,cp_coop,2
 
 playlist 204
@@ -3854,8 +3854,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_sing_sgen,cp_coop,2
 
 playlist 205
@@ -3882,8 +3882,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_sing_vengeance,cp_coop,2
 
 playlist 206
@@ -3910,8 +3910,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_cairo_ramses,cp_coop,2
 
 playlist 207
@@ -3938,8 +3938,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_cairo_infection,cp_coop,2
 
 playlist 208
@@ -3966,8 +3966,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_cairo_aquifer,cp_coop,2
 
 playlist 209
@@ -3994,8 +3994,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_cairo_lotus,cp_coop,2
 
 playlist 210
@@ -4022,8 +4022,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_zurich_coalescence,cp_coop,2
 
 playlist 211
@@ -4083,8 +4083,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_sing_sgen,cp_coop,2
 
 playlist 221
@@ -4111,8 +4111,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_zurich_newworld,cp_coop,2
 
 playlist 222
@@ -4139,8 +4139,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_sing_biodomes,cp_coop,2
 
 playlist 223
@@ -4167,8 +4167,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_cairo_aquifer,cp_coop,2
 
 playlist 224
@@ -4195,8 +4195,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_eth_prologue,cp_coop,2
 
 playlist 225
@@ -4223,8 +4223,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_sing_vengeance,cp_coop,2
 
 playlist 226
@@ -4251,8 +4251,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_sing_blackstation,cp_coop,2
 
 playlist 227
@@ -4279,8 +4279,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_cairo_ramses,cp_coop,2
 
 playlist 228
@@ -4307,8 +4307,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_cairo_infection,cp_coop,2
 
 playlist 229
@@ -4335,8 +4335,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_cairo_lotus,cp_coop,2
 
 playlist 230
@@ -4363,8 +4363,8 @@ icon playlist_generic_02
 rule party_minplayers 1
 rule party_maxplayers 4
 //rule party_matchedplayercount 1
-rule scr_xpscalecp 1
-rule scr_gunxpscalecp 1
+rule scr_xpscalemp 50
+rule scr_gunxpscalecp 50
 cp_mi_zurich_coalescence,cp_coop,2
 
 // must have a hard return after this line
